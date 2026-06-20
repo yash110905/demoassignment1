@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}} | Demo Portfolio</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1><a href="/">Eduardo Jaime</a></h1>
+        <nav>
+          <ul>
+            <li><a href="/" class="{{#ifEquals active 'home'}}active{{/ifEquals}}">Home</a></li>
+            <li><a href="/about" class="{{#ifEquals active 'about'}}active{{/ifEquals}}">About</a></li>
+            <li><a href="/projects" class="{{#ifEquals active 'projects'}}active{{/ifEquals}}">Projects</a></li>
+            <li><a href="/contact" class="{{#ifEquals active 'contact'}}active{{/ifEquals}}">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      {{{body}}}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Built with Express and Handlebars.</p>
+        <p>
+          <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">GitHub</a>
+          ·
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
